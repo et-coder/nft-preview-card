@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Overpass";
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+}
+
+.container {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.3em;
+    background-color: hsl(216, 50%, 16%);
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.hero {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.hero:hover .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(178, 100%, 50%, 0.5);
+    background-image: url("./images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+h1 {
+    font-size: 1.3em;
+    color: white;
+    margin: 0.8em 0;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.body {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+    margin-bottom: 0.75em;
+}
+
+.meta-data {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding: 1em 0;
+    font-size: 1rem;
+
+}
+
+.meta-data img {
+    margin-right: 0.3em;
+    vertical-align: middle;
+    margin-top: -0.2em;
+}
+
+.meta-data span:first-child {
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+}
+
+.profile {
+    margin-top: 1em;
+}
+
+.profile img {
+    width: 11%;
+    border: 1px solid white;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+.profile p {
+    font-size: 0.9rem;
+}
+
+.profile span {
+    color: white;
+}
+
+.profile span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
